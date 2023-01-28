@@ -29,14 +29,19 @@ main {
     background-color: rgba(194, 194, 194, 0.700);
     text-align: center;
     margin: auto;
-    margin-top: 10%;
+    margin-top: 2%;
     padding: 2em;
-    max-width: 80vw;
+    width: 80vw;
     border-radius: 10px;
     box-shadow: -2px 2px 4px var(--sombra);
 }
 fieldset {
     border: none;
+}
+#moeda {
+    border: none;
+    padding: 1em;
+    border-radius: 5px;
 }
 input[type=number] {
     border: none;

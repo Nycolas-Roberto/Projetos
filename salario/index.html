@@ -13,7 +13,11 @@
     </header>
     <main>
         <fieldset>
-
+            <select name="moeda" id="moeda">       
+                <option value="br">R$</option>
+                <option value="euro">€</option>
+                <option value="dolar">US$</option>
+            </select>
             <br>
             <input type="number" name="vh" id="vh" placeholder="Valor da hora" required min="0.1" step="0.1" class="valores">
             <br>
@@ -30,16 +34,18 @@
         function calcSal() {
             resp.innerHTML = "";
             erro.innerHTML = "";
+            
             // Entrada de dados
             let vh = document.getElementById('vh').value;
             let ht = document.getElementById('ht').value;
             let pd = document.getElementById('pd').value;
             
+            // Processamento e saída
             if(vh > 0.9 && ht > 0.9 && pd > 0.9){
                 let sbruto = vh*ht;
                 let tdesc = (pd/100)*sbruto;
                 let sliqu = sbruto-tdesc;
-                resp.innerHTML = `Salário Bruto: ${sbruto}<br>Total de Desconto: ${tdesc}<br>Salário Líquido: ${sliqu}`
+                resp.innerHTML = `Obtivemos esse resultado logo abaixo.<br>Salário Bruto: ${sbruto}<br>Total de Desconto: ${tdesc}<br>Salário Líquido: ${sliqu}`
             } else {
                 erro.innerHTML = "VALORES INVÁLIDOS"
             }
