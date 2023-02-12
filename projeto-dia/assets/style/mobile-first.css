@@ -1,0 +1,54 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+:root {
+    --sombra: rgb(0,0,0, 0.400)
+}
+header {
+    text-align: center;
+    margin-top: 2em;
+}
+h1 {
+    font-size: 3.0em;
+    color: rgb(233, 233, 233);
+    text-shadow: 1px 1px 5px var(--sombra);
+}
+p {
+    font-size: 1em;
+}
+main {
+    width: 90vw;
+    box-shadow: 1px 1px 5px var(--sombra);
+    background-color: rgb(177, 177, 177); /* Trocar cor de acordo com o horário */
+    border-radius: 10px;
+    height: 50vh;
+    margin: auto;
+    text-align: center;
+}
+#horas {
+    font-weight: bold;
+    font-size: 1.7em;
+    padding: 1em;
+}
+#imgHoras {
+    height: 60%;
+    width: 50%;
+    margin: auto;
+    box-shadow: 1px 1px 5px var(--sombra);
+    border-radius: 100%;
+    border: 1px solid black;
+}
+footer {
+    text-align: center;
+    margin: auto;
+    margin-top: 30vh;
+    padding: 13px;
+    width: 100vw;
+    font-weight: normal;
+    position: fixed;
+    text-shadow: 1px 1px 5px var(--sombra);
+}
