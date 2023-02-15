@@ -1,0 +1,301 @@
+@charset "UTF-8"; /* CONFIGURAÇÃO DO TIPO DE CARACTER */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); /* FONTE ROBOTO */
+
+/* CONFIGURAÇÕES GLOBAIS */
+* {
+    font-family: 'Roboto', sans-serif; /* APLICAR A FONTE PADRÃO */
+    margin: 0; /* RESETAR CONFIGURAÇÕES DE MARGEM */
+    padding: 0; /* RESETAR CONFIGURAÇÕES DE PREENCHIMENTO */
+    box-sizing: border-box; /* Basicamente é o tipo da margem, assim conseguimos manter todo o conteúdo dentro da página */
+}
+body {
+    display: flex; /* APLICAR O DISPLAY MAIS FLEXÍVEL */
+    justify-content: center; /* Alinhamento Horizontal */
+    align-items: center; /* Alinhamento Vertical */
+    min-height: 100vh; /* 100% da visualização da tela */
+    background-color: rgb(19, 19, 36); /* COR DE FUNDO */
+}
+
+
+/* VERSÃO MOBILE */
+@media screen and (max-width: 720px){
+    /* DIV PARA O CONTEÚDO PRINCIPAL */
+    .container {
+        position: relative; /* POSIÇÃO PADRÃO */
+        width: 250px; /* TAMANHO DA LARGURA FIXA EM 250PX */
+        height: 250px; /* TAMANHO DA ALTURA FIXA EM 250PX */
+        display: flex; /* REAPLICAR O DISPLAY FLEXÍVEL */
+        justify-content: center; /* ALINHAR HORIZONTALMENTE CENTRALIZADA A DIV */
+        align-items: center; /* ALINHAR VERTICALMENTE CENTRALIZADA A DIV CONTEINER*/
+    }
+    /* FIM DAS CONFIGURAÇÕES DA DIV PARA O CONTEÚDO PRINCIPAL */
+
+
+    /* DIV PARA O CAMPO DE LOGIN */
+    .box-login {
+        width: 295px; /* LARGURA FIXA EM 295PX */
+        position: absolute; /* POSIÇÃO ABSOLUTA PARA NÃO TERMOS DIFICULDADES EM POSICIONAMENTO */
+    }
+    /* FIM DAS CONFIGURAÇÕES DA DIV PARA O CAMPO DE LOGIN */
+
+
+    /* TÍTULO PRINCIPAL DA PÁGINA */
+    h1 {
+        text-align: center; /* ALINHAR O TEXTO NO CENTRO */
+        font-size: 2.5em; /* TAMANHO DO TEXTO EM 2.5em */
+        color: white; /* COR BRANCA */
+        font-weight: 500; /* PESO/NEGRITO DA FONTE EM 500 */
+    }
+    /* FIM DAS CONFIGURAÇÕES DO TÍTULO PRINCIPAL DA PÁGINA */
+
+
+    /* CONFIGURAÇÕES DO FORMULÁRIO */
+    .box-login form {
+        width: 100%; /* UTILIZAR 100% DA LARGURA DISPONÍVEL */
+        padding: 0 50px; /* PREENCHIMENTO 0 NO TOPO E 0 EM BAIXO, 50px DIREITA E 50px ESQUERDA */
+    }
+    /* FIM CONFIGURAÇÕES DO FORMULÁRIO */
+
+
+    /* CAMPOS DE ENTRADA DE INFORMAÇÃO */
+    .caixa-entrada {
+        position: relative; /* POSIÇÃO PADRÃO */
+        margin: 25px 0px; /* MARGEM 25px NO TOPO e 25px EM BAIXO, 0px DOS LADOS */
+    }
+    .caixa-entrada input {
+        color: white; /* COR DO TEXTO BRANCO */
+        text-align: center; /* ALINHAMENTO DO TEXTO */
+        width: 100%; /* UTILIZAR 100% DA LARGURA DISPONÍVEL */
+        height: 50px; /* TAMANHO DA ALTURA FIXA EM 50px*/
+        padding: 0 20px; /* PREENCHIMENTO 0 NO TOPO E 0 EM BAIXO, 20px DIREITA e 20px ESQUERDA */
+        background-color: transparent; /* COR DE FUNDO TRANSPARENTE */
+        border: 1px solid white; /* BORDA COM 1 PIXEL DE ESPESSURA DO TIPO SÓLIDA COM COR BRANCA */
+        outline: none; /* Remover linha após clicar no input */
+        border-radius: 10px; /* ARREDONDAMENTO DAS 4 BORDAS */
+        box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.250); /* SOMBRA BÁSICA */
+    }
+    .caixa-entrada label {
+        color: white; /* COR BRANCA */
+        position: absolute; /* POSIÇÃO ABSOLUTA */
+        top: 50%; /* 50% PARA BAIXO */
+        left: 5%; /* 5% PARA A ESQUERDA */
+        transform: translateY(-50%); /* CORRIGIR POSIÇÃO */
+        font-size: 1em; /* TAMANHO DA FONTE */
+        pointer-events: none; /* NENHUM EVENTO EM RELAÇÃO AO PONTEIRO DO MOUSE */
+    }
+    /* FIM DAS CONFIGURAÇÕES DOS CAMPOS DE ENTRADAS DE INFORMAÇÕES */
+
+
+    .esqueceu-senha {
+        margin: -15px 0px 10px; /* POSICIONAMENTO DA DIV */
+        text-align: center; /* ALINHAMENTO DO TEXTO */
+    }
+    .esqueceu-senha a {
+        font-size: .8em; /* TAMANHO DA FONTE EM 8em */
+        color: white; /* COR DO TEXTO BRANCA */
+        text-decoration: none; /* REMOVER O UNDERLINE DA TAG a */
+    }
+    .esqueceu-senha a:hover {
+        text-decoration: underline; /* QUANDO PASSAR O MOUSE POR CIMA ADICIONAR O UNDERLINE */
+    }
+
+
+
+    /* CONFIGURAÇÕES DO BOTÃO */
+    .btn {
+        width: 100%;
+        height: 45px;
+        background-color: rgba(255, 255, 255, 0.700);
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        cursor: pointer;
+        color: rgb(14, 14, 14);
+        font-weight: 600;
+        transition: .3s;
+        transition-timing-function: ease;
+    }
+    .btn:hover {
+        background-color: rgba(255, 255, 255);
+    }
+    /* FIM DAS CONFIGURAÇÕES DO BOTÃO */
+
+
+    /* CONFIGURAÇÕES DO TEXTO CADASTRE */
+    .cadastre {
+        margin: 20px 0 10px;
+        text-align: center;
+    }
+    .cadastre a {
+        font-size: 0.9em;
+        color: white;
+        text-decoration: none;
+    }
+    .cadastre a:hover {
+        text-decoration: underline;
+    }
+    /* FIM DAS CONFIGURAÇÕES DO TEXTO CADASTRE */
+    
+    
+    /* Quando o input estiver focado e ativado o LABEL terá as seguintes configurações*/
+    .caixa-entrada input:focus~label, .caixa-entrada input:valid~label {
+        top: 1px;
+        font-size: .8em;
+        background-color: rgb(19, 19, 36);
+        padding: 0 2px;
+        transition: .1s;
+        transition-timing-function: ease;
+        color: rgb(72, 28, 122);
+    }
+    
+    /* Quando o input estiver focado e ativado o INPUT terá as seguintes configurações */
+    .caixa-entrada input:focus, .caixa-entrada input:valid {
+        border-color: rgb(72, 28, 122);
+        transition: .1s;
+    }
+}
+
+
+
+
+
+
+/* MEDIA QUERY DESKTOP+ */
+@media screen and (min-width: 720px) {
+    .container {
+        position: relative;
+        width: 250px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .box-login {
+        width: 400px;
+        position: absolute;
+    }
+    h1 {
+        text-align: center;
+        font-size: 2.5em;
+        color: white;
+        font-weight: 500;
+    }
+    .box-login form {
+        width: 100%;
+        padding: 0 50px;
+    }
+    .caixa-entrada {
+        position: relative;
+        margin: 25px 0px;
+    }
+    .caixa-entrada input {
+        color: white;
+        text-align: center;
+        width: 100%;
+        height: 50px;
+        padding: 0 20px;
+        background-color: transparent;
+        border: 1px solid white;
+        outline: none; /* Remover linha após clicar no input */
+        border-radius: 10px;
+        box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.250);
+    }
+    .caixa-entrada label {
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        transform: translateY(-50%);
+        font-size: 1em;
+        pointer-events: none;
+        
+    }
+    .esqueceu-senha {
+        margin: -15px 0px 10px;
+        text-align: center;
+    }
+    .esqueceu-senha a {
+        font-size: .8em;
+        color: white;
+        text-decoration: none;
+    }
+    .esqueceu-senha a:hover {
+        text-decoration: underline;
+    }
+    .btn {
+        width: 100%;
+        height: 45px;
+        background-color: rgba(255, 255, 255, 0.700);
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        cursor: pointer;
+        color: rgb(14, 14, 14);
+        font-weight: 600;
+        transition: .3s;
+        transition-timing-function: ease;
+    }
+    .btn:hover {
+        background-color: rgba(255, 255, 255);
+    }
+    .cadastre {
+        margin: 20px 0 10px;
+        text-align: center;
+    }
+    .cadastre a {
+        font-size: 0.9em;
+        color: white;
+        text-decoration: none;
+    }
+    .cadastre a:hover {
+        text-decoration: underline;
+    }
+    
+    
+    
+    /* Quando o input estiver focado e ativado o LABEL terá as seguinte configurações tal tal... */
+    .caixa-entrada input:focus~label, .caixa-entrada input:valid~label {
+        top: 1px;
+        font-size: .8em;
+        background-color: rgb(19, 19, 36);
+        padding: 0 2px;
+        transition: .1s;
+        transition-timing-function: ease;
+        color: rgb(72, 28, 122);
+    }
+    
+    
+    .caixa-entrada input:focus, .caixa-entrada input:valid {
+        border-color: rgb(72, 28, 122);
+        transition: .1s;
+    }
+    
+    
+    /* TAG SPAN PARA CONCLUIR O EFEITO */
+    .container span {
+        position: absolute; /* POSIÇÃO ABSOLUTA PARA EVITAR PROBLEMAS COM POSICIONAMENTO */
+        left: 0px; /* RESETAR O MOVIMENTO PARA O LADO ESQUERDO */
+        width: 25px; /* LARGURA DE 25px */
+        height: 10px; /* ALTURA DE 10px */
+        border-radius: 5px; /* ARREDONDAMENTO DAS 4 BORDAS */
+        background: rgb(51, 51, 88); /* COR DE FUNDO PARA CASA TAG SPAN */
+        transform: scale(2.2) rotate(calc(var(--i)*360deg/50)); /* FORMAR O CIRCULO */
+        transform-origin: 128px; /* DISTÂNCIA EM RELAÇÃO AO FORMULÁRIO */
+        animation: animalink 2s linear infinite; /* SHORTHAND DA ANIMAÇÃO */
+        animation-delay: calc(var(--i)*(2s/50)); /* DELAY PARA O EFEITO */
+        box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.230); /* sombra básica */
+        border: 1px solid rgb(72, 28, 122); /* BORDA DE 1px DO TIPO SÓLIDA */
+    }
+    
+    @keyframes animalink {
+        /* REALIZAR A ANIMAÇÃO */
+        0% {
+            background-color: rgb(42, 42, 175);
+        }
+        30% {
+            background-color: rgb(72, 28, 122);
+        }
+    }    
+}
