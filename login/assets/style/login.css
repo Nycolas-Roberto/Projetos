@@ -151,7 +151,7 @@ body {
     /* Quando o input estiver focado e ativado o INPUT terá as seguintes configurações */
     .caixa-entrada input:focus, .caixa-entrada input:valid {
         border-color: rgb(72, 28, 122);
-        transition: .1s;
+        transition: .1s; /* TRANSIÇÃO DE 0.1 SEGUNDO */
     }
 }
 
