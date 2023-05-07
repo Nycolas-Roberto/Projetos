@@ -28,7 +28,7 @@ senhasUsuario.forEach(function (item) {
     let cardSubtitle = document.createElement("h6");
     cardSubtitle.className = "mb-2";
     let cardSubtitleLink = document.createElement("a");
-    cardSubtitleLink.href = item.link;
+    cardSubtitleLink.href = item.fonte;
     cardSubtitleLink.style.textDecoration = "none";
     let cardSubtitleLinkText = document.createTextNode(item.fonte);
     cardSubtitleLink.appendChild(cardSubtitleLinkText);
