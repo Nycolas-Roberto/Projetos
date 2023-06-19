@@ -123,8 +123,15 @@ header {
 .mais-comprados {
     letter-spacing: 5px;
     text-align: center;
+    text-shadow: 0px 4px 5px var(--sombra);
 }
-
+.qtd {
+    outline: none;
+    width: 20%;
+    outline: none;
+    margin-left: 10px;
+    border: none;
+}
 
 
 
