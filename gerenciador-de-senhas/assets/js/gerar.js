@@ -12,7 +12,7 @@ function checarForcaSenha(senha) {
     let forca = 0;
 
     // verifica se a senha tem pelo menos 8 caracteres
-    if (senha.length >= 8) {
+    if (senha.length >= 1) {
         forca++;
     }
 
@@ -47,7 +47,7 @@ btn.addEventListener("click", function () {
     let size = document.querySelector("#sizePass").value;
     let fonte = document.querySelector("#fonte").value;
     let palavraChave = document.querySelector('#palavraChave').value;
-    if (size >= 8 && palavraChave.length >= 3 && fonte.length >= 12) {
+    if (size >= 1 && palavraChave.length >= 1 && fonte.length >= 1) {
         let outputPass = document.querySelector("#outputPass");
         senhaGerada = gerarSenha(size, palavraChave);
         outputPass.value = senhaGerada;
