@@ -238,7 +238,7 @@
 
             </div>
         </div>
-        <p class="ms-3 cnpj">CNPJ n.º 03.447.333/0000-00 | CEP 06233-903 - SHOP</p>
+        <p class="ms-3 cnpj">CNPJ n.º 03.447.333/0820-00 | CEP 06233-903 - SHOP</p>
     </footer>
 </body>
 
