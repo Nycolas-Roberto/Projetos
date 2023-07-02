@@ -105,7 +105,7 @@
             require_once("../../php/db.php");
             require_once("../../php/classes/classUser.php");
             $idUser = $user->getId($_SESSION['login'], $_SESSION['login']);
-            $sqlHistorico = "SELECT produto.prod_nome,produto.prod_preco,produto.prod_descricao,produto.prod_img FROM users_has_produto_user INNER JOIN produto ON users_has_produto_user.produto_user_idproduto_user WHERE users_has_produto_user.users_idusers = $idUser";
+            $sqlHistorico = "SELECT produto.prod_nome,produto.prod_preco,produto.prod_descricao,produto.prod_img FROM produto INNER JOIN users_has_produto_user ON users_has_produto_user.produto_user_idproduto_user = produto.idproduto_user WHERE users_has_produto_user.users_idusers = $idUser";
             $respHistorico = $connection->query($sqlHistorico);
             if(mysqli_num_rows($respHistorico) > 0) {
                 while($dataHistorico = mysqli_fetch_assoc($respHistorico)) {
