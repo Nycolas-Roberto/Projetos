@@ -159,7 +159,7 @@
                     while($dataProduto = mysqli_fetch_assoc($respProduto)) {
                         echo "
                             <div class='card m-3' style='width: 18rem;'>
-                            <img src='$dataProduto[prod_img]' class='card-img-top' alt='notebook'>
+                            <img src='assets/img/$dataProduto[prod_img]' class='card-img-top' alt='notebook'>
                             <div class='card-body'>
                                 <h5 class='card-title' name='produto_nome'>$dataProduto[prod_nome]</h5>
                                 <p class='card-text' name='produto_desc'>$dataProduto[prod_descricao]</p>
