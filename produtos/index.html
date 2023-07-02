@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtos</title>
+    <title>Produtos - Geral</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-ico">
     <link rel="stylesheet" href="assets/style/index.css">
     <!-- Bootstrap -->
@@ -16,6 +16,13 @@
 
     <!-- Box Icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @media screen and (min-width: 769px) {
+            .hide {
+                display: none;
+            }
+        }
+    </style>
 </head>
 
 
@@ -28,47 +35,57 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="#">Loja</a>
+                <a class="navbar-brand" href="#"><div class="icone-compras"></div></a>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link m-2 p-2" aria-current="page" href="#"><i class='bx bxs-home'></i> Home</a>
+                            <a class="nav-link links link-animation" aria-current="page" href="#"><i class='bx bxs-home'></i> Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link m-2 p-2" aria-current="page" href="#"><i class='bx bxs-shopping-bags'></i> Minhas compras</a>
+                            <a class="nav-link links link-animation" aria-current="page" href="#"><i class='bx bxs-shopping-bags'></i> Minhas compras</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link m-2 p-2" aria-current="page" href="#"><i class='bx bx-cart'></i> Meu carrinho</a>
+                            <a class="nav-link links link-animation" aria-current="page" href="#"><i class='bx bx-cart'></i> Meu carrinho</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link m-2 p-2" aria-current="page" href="#"><i class='bx bxs-cog'></i> Configurações</a>
+                            <a class="nav-link links link-animation" aria-current="page" href="#"><i class='bx bxs-cog'></i> Configurações</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
                         <input type="search" name="pesquisa" id="pesquisa" placeholder="Procure por produtos">
-                        <button class="btn" type="submit"><i class='bx bx-search-alt-2 fs-1'></i></button>
+                        <button class="btn btn-outline-success ms-2 hide" type="submit">PESQUISAR</button>
                     </form>
                 </div>
             </div>
         </nav>
     </header>
     <main class="mt-5 container">
-        <div class="compras-icone rotate-vert-center">
-
-        </div>
+        <section class="pesquisar">
+            <form class="d-flex" role="search">
+                <input type="search" name="pesquisa-inp" id="pesquisar-inp" placeholder="Procure por produtos">
+                <button class="btn btn-outline-success ms-2" type="submit">PESQUISAR</button>
+            </form>
+        </section>
         <section>
             <div class="d-flex justify-content-center">
-                <div class="catgo">
-                    <p class="text-focus-in">CELULAR</p>
-                </div>
-                <div class="catgo">
-                    <p class="text-focus-in">ROUPAS</p>
-                </div>
-                <div class="catgo">
-                    <p class="text-focus-in">CASA</p>
-                </div>
+                <a href="assets/pages/celular/celular.html" target="_self" class="text-decoration-none text-dark m-3">
+                    <div class="catgo">
+                        <p class="text-focus-in">CELULAR</p>
+                    </div>
+                </a>
+                <a href="assets/pages/roupas/roupas.html" target="_self" class="text-decoration-none text-dark m-3">
+                    <div class="catgo">
+                        <p class="text-focus-in">ROUPAS</p>
+                    </div>
+                </a>
+                <a href="assets/pages/casa/casa.html" target="_self" class="text-decoration-none text-dark m-3">
+                    <div class="catgo">
+                        <p class="text-focus-in">CASA</p>
+                    </div>
+                </a>
             </div>
         </section>
+
     </main>
     <section class="mt-3">
         <div id="carouselExample" class="carousel slide shadow-carousel">
@@ -94,7 +111,7 @@
         </div>
     </section>
     <section class="mt-5">
-        <h1 class="mais-comprados">Produtos mais vendidos</h1>
+        <h1 class="mais-comprados border-rgb ">Produtos mais vendidos</h1>
         <div class="d-flex flex-wrap justify-content-center">
             <div class="card m-3" style="width: 18rem;">
                 <img src="assets/img/notebook.png" class="card-img-top" alt="notebook">
@@ -134,6 +151,22 @@
             </div>
         </div>
     </section>
+    <footer class="p-4">
+        <h3 class="text-center">Mais Informações</h3>
+        <div class="d-flex">
+            <div class="infos m-3 w-50">
+                <h4 class="fs-5">Redes Sociais</h4>
+                <a href="#" class="links-footer"><i class='bx bxl-instagram-alt text-white'></i> Instagram</a>
+                <a href="#" class="links-footer"><i class='bx bxl-facebook-circle text-white'></i> Facebook</a>
+                <a href="#" class="links-footer"><i class='bx bxs-help-circle text-danger' ></i> Solução de Problemas</a>
+            </div>
+            <div class="infos infos2 m-3 w-50">
+                <h4 class="fs-5">Minha conta</h4>
+                <a href="#" class="links-footer"><i class='bx bxs-user-circle text-white'></i> Entre</a>
+            </div>
+        </div>
+        <p class="ms-3 cnpj">CNPJ n.º 03.447.333/0000-00 | CEP 06233-903 - SHOP</p>
+    </footer>
 </body>
 
 </html>
