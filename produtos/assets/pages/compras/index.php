@@ -74,7 +74,7 @@
                                 require_once("../../php/db.php"); // Chamando a conexão de banco de dados
                                 if(isset($_SESSION['login']) && isset($_SESSION['password'])) {
                                     $user = new User($connection);
-                                    $logado = $user->verificarLogin($_SESSION['login'], $_SESSION['login'], $_SESSION['password']);
+                                    $logado = $user->verificarLogin($_SESSION['login'], $_SESSION['login'], $_SESSION['password']); // Método de verificar se está logado.
                                     if ($logado == true) {
                                         echo "
                                             <li class='nav-item'>
@@ -113,8 +113,8 @@
         <?php 
             require_once("../../php/db.php");
             require_once("../../php/classes/classUser.php");
-            $idUser = $user->getId($_SESSION['login'], $_SESSION['login']);
-            $sqlHistorico = "SELECT produto.prod_nome,produto.prod_preco,produto.prod_descricao,produto.prod_img FROM produto INNER JOIN users_has_produto_user ON users_has_produto_user.produto_user_idproduto_user = produto.idproduto_user WHERE users_has_produto_user.users_idusers = $idUser";
+            $idUser = $user->getId($_SESSION['login'], $_SESSION['login']); // Método para capturar ID do usuário
+            $sqlHistorico = "SELECT produto.prod_nome,produto.prod_preco,produto.prod_descricao,produto.prod_img FROM produto INNER JOIN users_has_produto_user ON users_has_produto_user.produto_user_idproduto_user = produto.idproduto_user WHERE users_has_produto_user.users_idusers = $idUser"; // Comando SQL para capturar histórico de compras
             $respHistorico = $connection->query($sqlHistorico);
             if(mysqli_num_rows($respHistorico) > 0) {
                 while($dataHistorico = mysqli_fetch_assoc($respHistorico)) {
