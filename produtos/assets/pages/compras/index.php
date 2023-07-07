@@ -1,6 +1,12 @@
+<!-- 
+    Essa página tem o objetivo de exibir o histórico de compras feitas pelo usuário.
+ -->
 <?php 
+    /*
+     * Essa tag PHP aberta tem o intuito de verificar se estamos logados ou não, caso estivermos logado não irá acontercer nada. Porém, caso não estivermos logado, o código irá redirecionar para a página principal do projeto. 
+     */
     try {
-        session_start();
+        session_start(); // Abrir sessão para conseguirmos acessar as variáveis de sessão.
         if(isset($_SESSION['login']) && isset($_SESSION['password'])) {
             echo "";
         } else {
@@ -60,9 +66,12 @@
                         </li>
                         </li>
                          <?php
+                            /**
+                             * Esse código PHP irá verificar se estamos logado, caso estivermos logado irá exibir o link (Minhas Compras) e caso ao contrário, irá exibir os links (Entrar e Registrar-se).
+                             */
                             try {
-                                require_once("../../php/classes/classUser.php");
-                                require_once("../../php/db.php");
+                                require_once("../../php/classes/classUser.php"); // Chamando a classe Usuário
+                                require_once("../../php/db.php"); // Chamando a conexão de banco de dados
                                 if(isset($_SESSION['login']) && isset($_SESSION['password'])) {
                                     $user = new User($connection);
                                     $logado = $user->verificarLogin($_SESSION['login'], $_SESSION['login'], $_SESSION['password']);
