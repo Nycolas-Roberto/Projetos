@@ -119,22 +119,6 @@ body {
         background-color: rgba(255, 255, 255);
     }
     /* FIM DAS CONFIGURAÇÕES DO BOTÃO */
-
-
-    /* CONFIGURAÇÕES DO TEXTO CADASTRE */
-    .cadastre {
-        margin: 20px 0 10px;
-        text-align: center;
-    }
-    .cadastre a {
-        font-size: 0.9em;
-        color: white;
-        text-decoration: none;
-    }
-    .cadastre a:hover {
-        text-decoration: underline;
-    }
-    /* FIM DAS CONFIGURAÇÕES DO TEXTO CADASTRE */
     
     
     /* Quando o input estiver focado e ativado o LABEL terá as seguintes configurações*/
