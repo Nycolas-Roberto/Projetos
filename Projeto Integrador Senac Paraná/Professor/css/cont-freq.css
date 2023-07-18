@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media screen and (max-width:670px) {
+    section {
+        width: 100vw !important;
+        transition: .1s;
+    }
+}
+main, header, footer{
+    width: 390px;
+    margin: 0 auto;
+}
+html{
+    height: 844px;
+}
+
+.fundo {
+    width: 390px;
+    height: 844px;
+    margin: 0 auto;
+    background: linear-gradient(0deg, #04538f, #81cafd);
+    transition: .1s;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(0deg, #022a49, #5788ac);
+    background-attachment: fixed;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 80px;
+    margin-bottom: -40px;
+}
+
+.img img {
+    width: 90px;
+    color: orange;
+}
+
+.img figcaption {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+}
+
+.seletor {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: -35px;
+
+}
+
+select {
+    background-color: #f78c21;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.150);
+    color: white;
+}
+
+select option {
+    background-color: pink;
+    color: black;
+    border-radius: 10px;
+}
+
+.dashboards {
+    float: right;
+    margin-right: 20px;
+    position: relative;
+    top: -345px;
+}
+
+.dashboards div {
+    background-color: #f78c21;
+    height: 130px;
+    width: 130px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.15), inset 0px -8px 15px -5px #7a430b;
+    cursor: pointer;
+}
+
+.dashboards div:hover {
+    transform: scale(1.04);
+    background-color: #ff7b00;
+    transition: .2s;
+}
+
+.dashboards div:active {
+    transform: scale(1.08);
+    background-color: #ff7b00;
+    transition: .2s;
+}
+
+.dashboards div h1 {
+    margin-top: 10px;
+    font-size: 1.4em;
+    color: white;
+}
+
+.dashboards div span {
+    color: #703717;
+    font-weight: bold;
+    font-size: 3em;
+    margin-top: 10px;
+
+}
+
+/* Quadro */
+.quadro {
+    position: relative;
+    width: 180px;
+    height: 390px;
+    background-color: #04538f;
+    top: 100px;
+    left: 20px;
+    background-color: rgb(241, 214, 178);
+    padding: 15px;
+    border-radius: 10px;
+    border: solid 8px #f78c21;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.15);
+    background: url(../img/paper.jpg);
+    text-align: center;
+}
+
+.corda {
+    background-color: #f78c2100;
+    border: solid 5px #f78c21;
+    height: 45px;
+    width: 30px;
+    border-radius: 50% 50% 0px 0px;
+    position: relative;
+    top: -60px;
+    left: 50px;
+}
+
+.quadro p {
+    position: relative;
+    top: -40px;
+    font-family: 'Handlee', cursive;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(12, 12, 165);
+    height: 335px;
+    overflow: hidden;
+}
+
+footer {
+    margin: 0 auto;
+    margin-top: -10px;
+    display: flex;
+    width: 390px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -340px;
+}
+.home ul{
+    display: flex;
+
+}
+#editar{
+    background-color: rgb(49, 179, 23);
+}
+.home li{
+    background-color: #f78c21;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+    border-radius: 50%;
+    position: relative;
+    margin: 0px 15px;
+    padding: 0;
+    transition: .3s
+}
+
+/* Animação botão home */
+.home li:hover {
+    transform: scale(1.1);
+    transition: .3s
+}
+
+/* Botão de perfil */
+header {
+    margin: 0 auto;
+    margin-bottom: -80px;
+    padding: 0;
+    height: 80px;
+}
+
+/* Todo o botão de perfil */
+/* Perfil */
+.retratil {
+    list-style: none;
+
+}
+/* Componentes da lista do perfil */
+.retratil li {
+    display: flex;
+    justify-content: center;
+}
+/* Lista do perfil */
+.retratil ul {
+    list-style: none;
+}
+/* Lista do conteudo */
+.conteudo ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    transition: .5s;
+}
+
+/* Parágrafos do conteudo */
+.conteudo p {
+    margin: 10px 0px;
+    padding: 0px 8px;
+    font-size: 1em;
+    letter-spacing: -1px;
+    color: white;
+    opacity: 0;
+    height: 0px;
+    transition: .3s;
+}
+/* Etiqueta do botão invisível */
+.retratil label{
+    background-color: #f78c21;
+    padding: 10px 15px;
+    border-radius: 50%;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.15)
+}
+/* Ícone de perfil */
+.retratil label i{
+    transition: .5s;
+    margin: 0;
+}
+/* Botao checkbox invisível */
+#botao {
+    display: none;
+}
+/* Área laranja retrátil com as informações */
+.conteudo{
+    background-color: #f78c21;
+    border-radius: 50px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    transition: .5s;
+    max-width: 0;
+    overflow: hidden;
+    height: 44px;
+    margin: 0px 5px;
+}
+
+/* Todas as animações desse botão */
+#botao:hover~label{
+    transform: scale(1.1);
+    transition: .3s;
+}
+#sair{
+    transition: .3s;
+}
+#sair:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+#botao:checked~label i{
+    transform: rotate(360deg);
+    border-radius: 50%;
+    transition: .5s;
+}
+#botao:checked~.retratil label i{
+    transition: .5s;
+    padding: 0;
+    margin: 0;
+}
+#botao:checked~.conteudo{
+    max-width: 600px;
+    transition: .5s;
+}
+#botao:checked~.conteudo p{
+    display: flex;
+    transition: .3s;
+    opacity: 100;
+}
+.botao_perfil{
+    margin-left: 10px;
+    padding: 0px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+}
+
+
+ul {
+    padding: 0 !important;
+    margin: 0 !important;
+}

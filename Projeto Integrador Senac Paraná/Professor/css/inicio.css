@@ -1,0 +1,233 @@
+/* Seletor global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media screen and (max-width:670px) {
+    section {
+        width: 100vw !important;
+        transition: .1s;
+    }
+}
+html{
+height: 844px
+}
+body {
+    height: 100vh;
+    background: linear-gradient(0deg, #022a49, #5788ac);
+    background-attachment: fixed;
+}
+
+/* Corpo principal (Área azul do fundo) */
+section {
+    width: 390px;
+    height: 844px;
+    margin: 0 auto;
+    background: linear-gradient(0deg, #04538f, #81cafd);
+    transition: .1s;
+}
+
+main, header, footer {
+    width: 390px;
+    margin: 0 auto;
+}
+/* Corpo principal (Área azul do fundo) */
+section {
+    width: 390px;
+    height: 844px;
+    margin: 0 auto;
+    background: linear-gradient(0deg, #04538f, #81cafd);
+}
+/* Área laranja de novidades */
+.novidades {
+    margin: 0 auto;
+    width: 138px;
+    height: 31px;
+    border-radius: 20px;
+    background-color: #f78c21;
+    text-align: center;
+    line-height: 30px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.150);
+    margin-top: 30px;
+}
+
+/* Texto Novidades  */
+.novidades p {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+/* Imagens do carrossel */
+#slides {
+    height: 220px;
+    border-radius: 10px;
+}
+
+/* Carrossel */
+.carrossel {
+    width: 370px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Div que guarda os 4 dashboards */
+.inicio_dashboards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Título H1 dos dashboards */
+.inicio_dashboards h1 {
+    font-size: 1.4em;
+    font-weight: 600px;
+    color: white;
+}
+
+/* Ícones dos dashboards */
+.inicio_dashboards img {
+    width: 80px;
+    padding: 0px;
+}
+
+/* Dashboards laranjas */
+.dashboard {
+    cursor: pointer;
+    width: 230px;
+    height: 130px;
+    background-color: #f78c21;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.15), inset 0px -8px 15px -5px #7a430b;
+    padding-left: 8px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-items: center;
+    text-decoration: none;
+}
+.dashboard h1{
+    width: 110px;
+    padding-left: 20px;
+}
+
+/* Animação dos dashboards */
+.dashboard:hover {
+    transform: scale(1.04);
+    background-color: #ff7b00;
+    transition: .2s;
+}
+
+
+
+
+
+
+/* Perfil */
+.retratil {
+    list-style: none;
+
+}
+/* Componentes da lista do perfil */
+.retratil li {
+    display: flex;
+    justify-content: center;
+}
+/* Lista do perfil */
+.retratil ul {
+    list-style: none;
+}
+/* Lista do conteudo */
+.conteudo ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    transition: .5s;
+}
+
+/* Parágrafos do conteudo */
+.conteudo p {
+    margin: 10px 0px;
+    padding: 0px 8px;
+    font-size: 1em;
+    letter-spacing: -1px;
+    color: white;
+    opacity: 0;
+    height: 0px;
+    transition: .3s;
+}
+/* Etiqueta do botão invisível */
+.retratil label{
+    background-color: #f78c21;
+    padding: 10px 15px;
+    border-radius: 50%;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.15)
+}
+/* Ícone de perfil */
+.retratil label i{
+    transition: .5s;
+    margin: 0;
+}
+/* Botao checkbox invisível */
+#botao {
+    display: none;
+}
+/* Área laranja retrátil com as informações */
+.conteudo{
+    background-color: #f78c21;
+    border-radius: 50px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    transition: .5s;
+    max-width: 0;
+    overflow: hidden;
+    height: 44px;
+    margin: 0px 5px;
+}
+
+/* Todas as animações desse botão */
+#botao:hover~label{
+    transform: scale(1.1);
+    transition: .3s;
+}
+#sair{
+    transition: .3s;
+}
+#sair:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+#botao:checked~label i{
+    transform: rotate(360deg);
+    border-radius: 50%;
+    transition: .5s;
+}
+#botao:checked~.retratil label i{
+    transition: .5s;
+    padding: 0;
+    margin: 0;
+}
+#botao:checked~.conteudo{
+    max-width: 600px;
+    transition: .5s;
+}
+#botao:checked~.conteudo p{
+    display: flex;
+    transition: .3s;
+    opacity: 100;
+}
+.botao_perfil{
+    margin-left: -20px;
+    padding: 0px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+}

@@ -1,0 +1,336 @@
+/* Seletor global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Limitar altura do documento */
+html {
+    height: fit-content !important;
+
+}
+
+/* Corpo */
+.content {
+    width: 390px;
+    height: fit-content !important;
+
+    margin: 0 auto;
+    background: linear-gradient(0deg, #04538f, #81cafd);
+}
+
+/* Background animado */
+@media screen and (max-width:670px) {
+    section {
+        width: 100vw !important;
+        transition: .1s;
+    }
+}
+
+
+
+body {
+    height: fit-content;
+    background: linear-gradient(0deg, #022a49, #5788ac);
+    background-attachment: fixed;
+
+}
+
+/* Perfil */
+.retratil {
+    list-style: none;
+
+}
+
+/* Componentes da lista do perfil */
+.retratil li {
+    display: flex;
+    justify-content: center;
+}
+
+/* Lista do perfil */
+.retratil ul {
+    list-style: none;
+}
+
+/* Lista do conteudo */
+.conteudo ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    transition: .5s;
+}
+
+/* Parágrafos do conteudo */
+.conteudo p {
+    margin: 10px 0px;
+    padding: 0px 8px;
+    font-size: 1em;
+    letter-spacing: -1px;
+    color: white;
+    opacity: 0;
+    height: 0px;
+    transition: .3s;
+}
+
+/* Etiqueta do botão invisível */
+.retratil label {
+    background-color: #f78c21;
+    padding: 10px 15px;
+    border-radius: 50%;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.15)
+}
+
+/* Ícone de perfil */
+.retratil label i {
+    transition: .5s;
+    margin: 0;
+}
+
+/* Botao checkbox invisível */
+#botao {
+    display: none;
+}
+
+/* Área laranja retrátil com as informações */
+.conteudo {
+    background-color: #f78c21;
+    border-radius: 50px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    transition: .5s;
+    max-width: 0;
+    overflow: hidden;
+    height: 44px;
+    margin: 0px 5px;
+}
+
+/* Todas as animações desse botão */
+#botao:hover~label {
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+#sair {
+    transition: .3s;
+}
+
+#sair:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+#botao:checked~label i {
+    transform: rotate(360deg);
+    border-radius: 50%;
+    transition: .5s;
+}
+
+#botao:checked~.retratil label i {
+    transition: .5s;
+    padding: 0;
+    margin: 0;
+}
+
+#botao:checked~.conteudo {
+    max-width: 600px;
+    transition: .5s;
+}
+
+#botao:checked~.conteudo p {
+    display: flex;
+    transition: .3s;
+    opacity: 100;
+}
+
+.botao_perfil {
+    margin-left: -20px;
+    padding: 0px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+}
+
+
+/* main */
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form select {
+    width: 256px;
+    text-align: center;
+    margin: 12px 0px;
+    padding: 5px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    background-color: #f78c21;
+    color: white;
+    font-size: 18px;
+    box-shadow: inset 0px -5px 10px rgba(0, 0, 0, 0.150), 0px 8px 8px rgba(0, 0, 0, 0.150);
+}
+
+form input {
+    width: 256px;
+    text-align: center;
+    margin: 12px 0px;
+    padding: 5px;
+    border-radius: 15px;
+    border: 2px solid #f78c21;
+    outline: none;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+
+form select option {
+    background-color: white;
+    color: black;
+    font-size: 18px;
+}
+
+/* .select-aluno{
+    display: none;
+} */
+
+.txt textarea {
+    margin-top: 20px;
+    outline: none;
+    border: solid 5px #f78c21;
+    border-radius: 25px;
+    resize: none;
+    text-align: center;
+    padding: 15px 8px;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+/* Botão home */
+footer {
+    margin: 0 auto;
+    margin-top: -30px;
+    display: flex;
+    width: 390px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#home li {
+    background-color: #f78c21;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+    border-radius: 50%;
+    position: relative;
+    margin: 13px 15px;
+    padding: 0;
+    transition: .3s;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.150), inset 0px -5px 10px rgba(0, 0, 0, 0.150);
+}
+
+/* Animação botão home */
+#home li:active {
+    transform: translateY(5px);
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.150), inset 0px -5px 10px rgba(0, 0, 0, 0.150);
+    transition: .2s;
+
+}
+
+#home ul {
+    list-style: none;
+}
+
+#home button {
+    outline: none;
+    border: none;
+    background-color: rgb(49, 179, 23);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+    border-radius: 25px;
+    position: relative;
+    padding: 0;
+    transition: .3s;
+    box-shadow: 0px 1px 8px rgba(223, 214, 214, 0.15), inset 0px -5px 10px rgba(0, 0, 0, 0.150);
+}
+
+/* Animação botão home */
+#home button:active {
+    outline: none;
+    border: none;
+    background-color: rgb(49, 179, 23);
+    transform: translateY(5px);
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.150), inset 0px -5px 10px rgba(0, 0, 0, 0.150);
+    transition: .2s;
+}
+
+label#msg-error {
+    font-size: 22px;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 0px;
+    display: block;
+    margin-bottom: -25px;
+
+}
+
+label#dia-error,
+label#turma-error,
+label#inp_faltas-error,
+label#curso-error {
+    font-size: 20px;
+    margin: 0 auto;
+    margin-top: -15px;
+}
+
+.error {
+    visibility: visible;
+    margin-top: -0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    color: red;
+    text-align: center;
+
+}
+
+.success {
+    border: solid 2px green;
+    color: green;
+
+}
+#unidade option{
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
