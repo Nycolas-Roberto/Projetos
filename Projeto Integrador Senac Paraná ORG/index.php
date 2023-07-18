@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <!-- Link do CSS -->
-    <link rel="stylesheet" href="../css/seletor.css">
+    <link rel="stylesheet" href="Login/css/seletor.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,7 @@
 <body>
     <section class="fundo">
         <div class="logo">
-            <img src="../img/icone-senac.png" alt="" id="icone-senac">
+            <img src="Login/img/icone-senac.png" alt="" id="icone-senac">
         </div><!-- logo -->
 
         <div class="title">
@@ -26,15 +26,15 @@
         <div class="icones">
 
             <div class="icon">
-                <a href="tela-aluno.php">
-                    <img src="../img/icon-book.png" alt="" class="icone">
+                <a href="Login/pages/tela-aluno.php">
+                    <img src="Login/img/icon-book.png" alt="" class="icone">
                     <figcaption>ALUNO</figcaption>
                 </a>
             </div><!-- icon -->
 
             <div class="icon">
-                <a href="tela-professor.php">
-                    <img src="../img/icon-people.png" alt="" class="icone">
+                <a href="Login/pages/tela-professor.php">
+                    <img src="Login/img/icon-people.png" alt="" class="icone">
                     <figcaption>DOCENTE</figcaption>
                 </a>
             </div><!-- icon -->
