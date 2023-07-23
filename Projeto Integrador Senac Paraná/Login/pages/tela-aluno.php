@@ -2,7 +2,7 @@
 try {
     session_start();
     if (isset($_SESSION['login']) && isset($_SESSION['senha'])) {
-        header("Location: ../../Aluno/pages/inicial.php");
+        header("Location: ../../Aluno/pages/index.php");
     } else {
         echo "";
     }
@@ -71,7 +71,7 @@ try {
                                 if (password_verify($senha, $hash)) {
                                     $_SESSION['login'] = $login;
                                     $_SESSION['senha'] = $senha;
-                                    header("Location: ../../Aluno/pages/inicial.php");
+                                    header("Location: ../../Aluno/pages/index.php");
                                 } else {
                                     die("<div class='error'>Verifique suas credenciais</div>");
                                 }
@@ -88,7 +88,7 @@ try {
         
     </section>
     <footer>
-            <a href="seletor.php"><i class="fa-sharp fa-solid fa-arrow-left" style="color: #ffffff;"></i></a>
+            <a href="../../"><i class="fa-sharp fa-solid fa-arrow-left" style="color: #ffffff;"></i></a>
         </footer>
 
 

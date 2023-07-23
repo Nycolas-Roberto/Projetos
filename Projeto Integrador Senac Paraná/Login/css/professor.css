@@ -5,15 +5,19 @@
     box-sizing: border-box;
 }
 
-@media screen and (max-width:670px) {
-    section {
-        width: 100vw !important;
-        transition: .1s;
+section {
+    width: 100vw !important;
+    transition: .1s;
+}
+
+@media screen and (min-width: 771px) {
+    * {
+        display: none;
     }
 }
 
 html {
-    height: 844px;
+    height: 844px
 }
 
 body {
@@ -129,8 +133,7 @@ main {
     color: white;
     font-weight: 600;
     cursor: pointer;
-
-    box-shadow: inset 0px -5px 10px rgba(0, 0, 0, 0.105), 0px 8px 8px rgba(0, 0, 0, 0.105);
+    box-shadow: inset 0px -5px 10px rgba(0, 0, 0, 0.150), 0px 8px 8px rgba(0, 0, 0, 0.150);
     transition: .2s;
 
 }
@@ -145,6 +148,7 @@ main {
 .error {
     transition: .5s;
     font-size: 1.4em;
+    margin: -8px;
     color: rgb(235, 13, 13);
     font-weight: 600;
     width: 100%;
@@ -172,7 +176,7 @@ footer {
 }
 
 footer:active {
-        transform: translateY(7px);
-        box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.150), inset 0px -5px 10px rgba(0, 0, 0, 0.150);
-        transition: .2s;
+    transform: translateY(7px);
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.150), inset 0px -5px 10px rgba(0, 0, 0, 0.150);
+    transition: .2s;
 }

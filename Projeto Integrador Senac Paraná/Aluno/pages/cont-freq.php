@@ -152,6 +152,7 @@ try {
             <div class="seletor">
                 <form action="#" method="POST">
                     <select name="unidade-selecionar" onchange="consulta()" id="unidade_select">
+                        <option>Selecione uma unidade</option>
                         <?php
                         try {
                             if (mysqli_num_rows($respAluno01) === 1) {
@@ -161,11 +162,7 @@ try {
                                     while ($dataUni = mysqli_fetch_assoc($respUni)) {
                                         $QtdUni = $dataUni['total_unidades'];
                                         for ($c = 1; $c <= $QtdUni; $c++) {
-                                            if ($c === 1) {
-                                                echo "<option value='$c' selected>Unidade $c</option>";
-                                            } else {
-                                                echo "<option value='$c'>Unidade $c</option>";
-                                            }
+                                            echo "<option value='$c'>Unidade $c</option>";
                                         }
                                     }
                                 } else {
@@ -227,7 +224,7 @@ try {
         </main>
         <footer>
             <div class="home">
-                <a href="inicial.php"><i class="fa-sharp fa-solid fa-house" style="color: #ffffff;"></i></a>
+                <a href="index.php"><i class="fa-sharp fa-solid fa-house" style="color: #ffffff;"></i></a>
             </div><!-- Home -->
         </footer>
     </section><!-- Fundo -->

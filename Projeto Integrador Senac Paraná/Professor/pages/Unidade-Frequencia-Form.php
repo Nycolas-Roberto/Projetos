@@ -127,7 +127,7 @@ try {
                         <div id="home">
                             <ul>
                                 <li>
-                                    <a href="inicial.php"><i class="fa-sharp fa-solid fa-house"
+                                    <a href="index.php"><i class="fa-sharp fa-solid fa-house"
                                             style="color: #ffffff;"></i></a>
                                 </li>
                             </ul>

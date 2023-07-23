@@ -8,7 +8,7 @@
 
                 unset($_SESSION['loginProf']);
                 unset($_SESSION['senhaProf']);
-                header("Location: ../../Login/pages/seletor.php");
+                header("Location: ../../");
             } else {
                 echo "";
             }

@@ -2,8 +2,6 @@ $(document).ready(function () {
     $("form").validate({
         rules: {
             email: {
-
-
                 required: true,
                 minlength: 3,
                 maxlength: 40,
@@ -12,14 +10,8 @@ $(document).ready(function () {
                 required: true,
                 minlength: 3,
                 maxlength: 100,
-            },
-            codigo: {
-                required: true,
-                minlength: 3,
-                maxlength: 100,
             }
             /* Criar uma mensagem personalizada */
-
         },
         messages: {
             email: {
@@ -31,14 +23,7 @@ $(document).ready(function () {
                 minlength: "Senha muito curta!",
                 maxlength: "Senha muito longa!",
             },
-            codigo: {
-                required: "Preencha este campo!",
-                minlength: "Código muito curto!",
-                maxlength: "Código muito longo!",
-            },
         },
-
-
     })/* Validação */
     $("#email").blur(function(){
         if($(this).valid()){
@@ -58,16 +43,5 @@ $(document).ready(function () {
             $(this).addClass("error")
             $(this).removeClass("success")
         }
-
-    })
-    $("#codigo").blur(function () {
-        if ($(this).valid()) {
-            $(this).removeClass("error")
-            $(this).addClass("success")
-        } else {
-            $(this).addClass("error")
-            $(this).removeClass("success")
-        }
-
     })
 })

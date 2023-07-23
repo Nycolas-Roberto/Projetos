@@ -1,18 +1,25 @@
 /* Seletor global */
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-@media screen and (max-width:700px) {
-    section {
-        width: 100vw !important;
-        transition: .1s;
+
+section {
+    width: 100vw !important;
+    transition: .1s;
+}
+
+@media screen and (min-width: 771px) {
+    * {
+        display: none;
     }
 }
-html{
-height: 844px
+
+html {
+    height: 844px;
 }
+
 body {
     height: 100vh;
     background: linear-gradient(0deg, #022a49, #5788ac);
@@ -29,18 +36,22 @@ section {
     transition: .1s;
 }
 
-main, header, footer {
+main,
+header,
+footer {
     width: 390px;
     margin: 0 auto;
 }
+
 /* Imagem da logomarca do Senac */
-#logo{
+#logo {
     width: 287px;
     margin: 0 auto;
-    filter: drop-shadow(0px 8px 5px rgba(0,0,0,0.20));
+    filter: drop-shadow(0px 8px 5px rgba(0, 0, 0, 0.20));
 
 }
-header{
+
+header {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -49,43 +60,47 @@ header{
     padding-top: 100px;
     margin-bottom: -100px;
 }
-header p{
+
+header p {
     margin-bottom: -5px;
 }
 
 
 /* Sessão principal */
-section{
+section {
     width: 390px;
     height: 844px;
-    background: linear-gradient(0deg, #04538f,#81cafd);
+    background: linear-gradient(0deg, #04538f, #81cafd);
     margin: 0 auto;
 }
-main{
+
+main {
     display: flex;
     flex-direction: column;
     padding-top: 120px;
 }
 
 /* inputs */
-.inp{
+.inp {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.inp input{
+
+.inp input {
     width: 290px;
     height: 50px;
     border-radius: 20px;
-    border: none ;
+    border: none;
     outline: none;
     margin: 12px 0px;
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.150);
     padding: 10px;
     box-sizing: none;
 }
+
 /* efeitos input */
-.inp input:focus{
+.inp input:focus {
     outline: #04538f;
     box-sizing: none;
     transition: .5s;
@@ -94,16 +109,17 @@ main{
 }
 
 /* texto abaixo da logo */
-.title{
+.title {
     margin: 0 auto;
     color: white;
     margin-top: 15px;
     font-size: 1.8em;
     font-weight: 600;
-    text-shadow: 0px 5px 10px rgba(0,0,0,.3);
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, .3);
 
 
 }
+
 /* botao entrar */
 .inp button {
     width: 145px;
@@ -117,7 +133,8 @@ main{
     color: white;
     font-weight: 600;
     cursor: pointer;
-    box-shadow: inset 0px -5px 10px rgba(0, 0, 0, 0.150), 0px 8px 8px rgba(0, 0, 0, 0.150);
+
+    box-shadow: inset 0px -5px 10px rgba(0, 0, 0, 0.105), 0px 8px 8px rgba(0, 0, 0, 0.105);
     transition: .2s;
 
 }
@@ -128,21 +145,23 @@ main{
     box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.150), inset 0px -5px 10px rgba(0, 0, 0, 0.150);
     transition: .2s;
 }
-.error{
+
+.error {
     transition: .5s;
     font-size: 1.4em;
-    margin: -8px;
     color: rgb(235, 13, 13);
     font-weight: 600;
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.success{
+
+.success {
     border: solid 2px green;
     color: green;
 
 }
+
 footer {
     font-size: 25px;
     background-color: #f78c21;
@@ -157,8 +176,7 @@ footer {
 }
 
 footer:active {
-        transform: translateY(7px);
-        box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.150), inset 0px -5px 10px rgba(0, 0, 0, 0.150);
-        transition: .2s;
+    transform: translateY(7px);
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.150), inset 0px -5px 10px rgba(0, 0, 0, 0.150);
+    transition: .2s;
 }
-

@@ -219,7 +219,7 @@ try {
         </main>
 
         <footer class="home">
-            <a href="inicial.php"><i class="fa-sharp fa-solid fa-house" style="color: #ffffff;"></i></a>
+            <a href="index.php"><i class="fa-sharp fa-solid fa-house" style="color: #ffffff;"></i></a>
         </footer><!-- Home -->
 
     </section><!-- Principal -->

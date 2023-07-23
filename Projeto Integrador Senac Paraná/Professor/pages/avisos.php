@@ -1,7 +1,7 @@
 <?php 
     try {
         session_start();
-        if(!(isset($_SESSION['login'])) && !(isset($_SESSION['senha']))) {
+        if(!(isset($_SESSION['loginProf'])) && !(isset($_SESSION['senhaProf']))) {
             header("Location: ../../Login/pages/seletor.php");
         } else {
             echo "";
@@ -30,13 +30,12 @@
 <?php 
     try {
         require_once("../../Login/php/db.php");
-        $sqlAluno01 = "SELECT * FROM aluno WHERE emailAluno = '$_SESSION[login]';";
+        $sqlAluno01 = "SELECT * FROM professor WHERE emailProf = '$_SESSION[loginProf]';";
         $respAluno01 = $connection->query($sqlAluno01);
         if(mysqli_num_rows($respAluno01) > 0) {
             while($dataAluno01 = mysqli_fetch_assoc($respAluno01)) {
-                $nomeDoAluno = $dataAluno01['nomeAluno'];
-                $turmaDoAluno = $dataAluno01['turma_idturma'];
-                $idCursoAluno = $dataAluno01['curso_idcurso'];
+                $nomeDoProf = $dataAluno01['nomeProf'];
+                $idCursoProf = $dataAluno01['idprofessor'];
             }
         } else {
             header("Location: ../../Login/pages/seletor.php");
@@ -56,21 +55,10 @@
                         <div class="conteudo">
                             <ul>
                                 <li>
-                                    <?php echo "<p>$nomeDoAluno</p>"?>
+                                    <?php echo "<p>$nomeDoProf</p>"?>
                                 </li>
                                 <li>
-                                    <?php
-                                        $sqlCurso = "SELECT * FROM curso WHERE idcurso = $idCursoAluno";
-                                        $respCurso = $connection->query($sqlCurso);
-                                        if(mysqli_num_rows($respCurso) > 0) {
-                                            while($dataCurso = mysqli_fetch_assoc($respCurso)) {
-                                                echo "<p>$dataCurso[nomeCurso]</p>";
-                                            }
-                                        }
-                                    ?>
-                                </li>
-                                <li>
-                                    <?php echo "<p>$turmaDoAluno</p>"?>
+                                    <?php echo "<p>$idCursoProf</p>"?>
                                 </li>
                                 <li>
                                    <p>
@@ -103,7 +91,15 @@
         </main>
         <footer>
             <div class="home">
-                <a href="inicial.php"><i class="fa-sharp fa-solid fa-house" style="color: #ffffff;"></i></a>
+                <ul>
+                    <li>
+                        <a href="index.php"><i class="fa-sharp fa-solid fa-house" style="color: #ffffff;"></i></a>
+                    </li>
+                    <li id="editar">
+                        <br>
+                        <a href="avisos-form.php"><i class="fa-solid fa-pencil" style="color: #ffffff;"></i></i></a>
+                    </li>
+                </ul>
             </div><!-- Home -->
         </footer>
 
