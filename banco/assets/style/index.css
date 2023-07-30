@@ -1,0 +1,83 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@100;200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', sans-serif;
+}
+:root {
+    --sombra01: rgba(0,0,0,0.2)
+}
+@media screen and (min-width: 482px) {
+    .device-no-mobile {
+        display: none;
+    }
+    .device-no-mobile-msg {
+        display: block;
+    }
+}
+@media screen and (max-width: 481px) {
+    .device-no-mobile-msg {
+        display: none;
+    }
+    header {
+        box-shadow: 0px 4px 10px var(--sombra01);
+    }
+    .logo-principal {
+        width: 90px;
+    }
+    header {
+        width: 100vw;
+    }
+    header h1 {
+        font-weight: 100;
+        letter-spacing: 5px;
+    }
+    header h2 {
+        color: transparent;
+        font-style: normal;
+        font-size: 10vw;
+        font-weight: bold;
+        -webkit-text-stroke: 1px #4900DE;
+        text-stroke: 1px #4900DE;
+        line-height: 40px;
+    }
+    .cliente-on, .cliente-off {
+        width: 300px;
+        height: 150px;
+        border-radius: 20px 0px;
+        color: white;
+        text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+        box-shadow: 0px 4px 10px var(--sombra01);
+        transition: .2s;
+        transition-timing-function: ease;
+    }
+    .cliente-on:hover, .cliente-off:hover {
+        text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9);
+        padding: 5px;
+    }
+    .cliente-on {
+        background-color: rgba(64, 0, 193, 85%);
+    }
+    .cliente-off {
+        background-color: rgba(0, 0, 0, 85%);
+    }
+    .cliente-off h3, .cliente-on h3 {
+        font-weight: 100;
+        text-align: center;
+        padding-top: 60px;
+        letter-spacing: 2px;
+    }
+    footer {
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        width: 100vw;
+        letter-spacing: 1px;
+    }
+    footer a {
+        text-decoration: none;
+    }
+}
+
