@@ -1,0 +1,48 @@
+.btn-consultar {
+    border: none;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px var(--sombra);
+    font-weight: 300;
+}
+.relatorio h2 {
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.copy {
+    background-color: #59009F;
+    color: white;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100px;
+    text-align: center;
+    font-weight: 300;
+    box-shadow: 0px 3px 4px var(--sombra);
+}
+.campo h3 {
+    font-size: 20px;
+    font-weight: 300;
+}
+.input-campo {
+    outline: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 10px;
+    padding: 15px;
+    border: 2px solid black;
+}
+.voltar {
+    box-shadow: 0px 4px 5px rgba(0,0,0,0.4);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: black;
+    width: 100px;
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none;
+}

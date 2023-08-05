@@ -32,15 +32,15 @@
                 <div class="mt-3 mb-3">
                     <button class="btn-buscar">Buscar</button>
                 </div>
-                <a href="#">Não sabe o nome completo?</a>
+                <a href="../keys/">Não sabe o nome completo?</a>
             </form>
 
             <section>
                 <h3>RESULTADOS</h3>
             
                 <!-- TAGS INSERIDOS PELA PHP, APAGAR DEPOIS DE PREPARAR O DESIGN -->
-                <h4 id="aprox-result">Aproximadamente 50 resultados.</h4>
-                <section class="d-flex justify-content-center"> <!-- Sessão para os ícones -->
+<!--                 <h4 id="aprox-result">Aproximadamente 50 resultados.</h4>
+                <section class="d-flex justify-content-center">
                     <section class="m-2 text-center">
                         <img src="../../img/github_mini.png" alt="github icon mini">
                         10
@@ -82,7 +82,7 @@
                 <section class="resultado d-flex ps-3">
                     <img src="../../img/instagram_normal.png" alt="instagram_normal normal" class="icons-pesquisa2 me-2 mt-2">
                     <h4 class="nome-perfil mt-3">NOME DO PERFIL</h4>
-                </section>
+                </section> -->
             </section>
 
         </main> <!-- MAIN -->

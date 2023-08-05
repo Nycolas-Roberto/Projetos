@@ -28,12 +28,15 @@
         </header> <!-- HEADER -->
         <main>
             <h2>ESCOLHA UMA CHAVE</h2>
-            <a href="#">
+            <a href="../cnpj/">
                 <div class="btns">
                     CNPJ
                 </div>
             </a>
         </main> <!-- MAIN -->
+        <footer>
+            <a href="../home/" class="voltar">Voltar</a>
+        </footer>
     </section> <!-- MOBILE-V -->
 
 
